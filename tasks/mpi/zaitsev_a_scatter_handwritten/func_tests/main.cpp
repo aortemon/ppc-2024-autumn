@@ -96,9 +96,9 @@ void test_double(int sz, double min = -10e2, double max = 10e2) {
 TEST(zaitsev_a_scatter_handwritten, test__dtype_int__size_0) {
   zaitsev_a_scatter_handwritten::test_int<zaitsev_a_scatter::scatter>(0);
 }
-//TEST(zaitsev_a_scatter_handwritten, test__dtype_int__size_1e0) {
-//  zaitsev_a_scatter_handwritten::test_int<zaitsev_a_scatter::scatter>(1);
-//}
+// TEST(zaitsev_a_scatter_handwritten, test__dtype_int__size_1e0) {
+//   zaitsev_a_scatter_handwritten::test_int<zaitsev_a_scatter::scatter>(1);
+// }
 TEST(zaitsev_a_scatter_handwritten, test__dtype_int__size_1e2) {
   zaitsev_a_scatter_handwritten::test_int<zaitsev_a_scatter::scatter>(1e2);
 }
@@ -111,10 +111,10 @@ TEST(zaitsev_a_scatter_handwritten, test__dtype_int__size_1e7) {
 
 TEST(zaitsev_a_scatter_handwritten, test__dtype_double__size_0) {
   zaitsev_a_scatter_handwritten::test_double<zaitsev_a_scatter::scatter>(0);
-}/*
-TEST(zaitsev_a_scatter_handwritten, test__dtype_double__size_1e0) {
-  zaitsev_a_scatter_handwritten::test_double<zaitsev_a_scatter::scatter>(1);
-}*/
+} /*
+ TEST(zaitsev_a_scatter_handwritten, test__dtype_double__size_1e0) {
+   zaitsev_a_scatter_handwritten::test_double<zaitsev_a_scatter::scatter>(1);
+ }*/
 TEST(zaitsev_a_scatter_handwritten, test__dtype_double__size_1e2) {
   zaitsev_a_scatter_handwritten::test_double<zaitsev_a_scatter::scatter>(1e2);
 }

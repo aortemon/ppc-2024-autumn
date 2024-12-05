@@ -94,13 +94,13 @@ void test_double(int sz, double min = -10e2, double max = 10e2) {
 }  // namespace zaitsev_a_scatter_mpi
 
 TEST(zaitsev_a_scatter_mpi, test__dtype_int__size_0) { zaitsev_a_scatter_mpi::test_int<MPI_Scatter>(0); }
-//TEST(zaitsev_a_scatter_mpi, test__dtype_int__size_1e0) { zaitsev_a_scatter_mpi::test_int<MPI_Scatter>(1); }
+// TEST(zaitsev_a_scatter_mpi, test__dtype_int__size_1e0) { zaitsev_a_scatter_mpi::test_int<MPI_Scatter>(1); }
 TEST(zaitsev_a_scatter_mpi, test__dtype_int__size_1e2) { zaitsev_a_scatter_mpi::test_int<MPI_Scatter>(1e2); }
 TEST(zaitsev_a_scatter_mpi, test__dtype_int__size_1e5) { zaitsev_a_scatter_mpi::test_int<MPI_Scatter>(1e5); }
 TEST(zaitsev_a_scatter_mpi, test__dtype_int__size_1e7) { zaitsev_a_scatter_mpi::test_int<MPI_Scatter>(1e7); }
 
 TEST(zaitsev_a_scatter_mpi, test__dtype_double__size_0) { zaitsev_a_scatter_mpi::test_double<MPI_Scatter>(0); }
-//TEST(zaitsev_a_scatter_mpi, test__dtype_double__size_1e0) { zaitsev_a_scatter_mpi::test_double<MPI_Scatter>(1); }
+// TEST(zaitsev_a_scatter_mpi, test__dtype_double__size_1e0) { zaitsev_a_scatter_mpi::test_double<MPI_Scatter>(1); }
 TEST(zaitsev_a_scatter_mpi, test__dtype_double__size_1e2) { zaitsev_a_scatter_mpi::test_double<MPI_Scatter>(1e2); }
 TEST(zaitsev_a_scatter_mpi, test__dtype_double__size_1e3) { zaitsev_a_scatter_mpi::test_double<MPI_Scatter>(1e3); }
 TEST(zaitsev_a_scatter_mpi, test__dtype_double__size_1e5) { zaitsev_a_scatter_mpi::test_double<MPI_Scatter>(1e5); }
