@@ -46,11 +46,8 @@ void test_int(int sz, int min = -10e2, int max = -10e2) {
     EXPECT_ANY_THROW(task.validation());
     return;
   }
-  if (!task.validation()) {
-    GTEST_SKIP();
-    return;
-  }
 
+  EXPECT_TRUE(task.validation());
   task.pre_processing();
   task.run();
   task.post_processing();
@@ -84,11 +81,8 @@ void test_double(int sz, double min = -10e2, double max = 10e2) {
     EXPECT_ANY_THROW(task.validation());
     return;
   }
-  if (!task.validation()) {
-    GTEST_SKIP();
-    return;
-  }
 
+  EXPECT_TRUE(!task.validation());
   task.pre_processing();
   task.run();
   task.post_processing();

@@ -44,7 +44,7 @@ class ScatterTask : public ppc::core::Task {
     internal_order_test();
     if (world.rank() == 0 && taskData->inputs_count[0] == 0)
       throw std::invalid_argument("Can't find minimum of empty vector");
-    return world.size() > 1 && (world.rank() != 0 || taskData->inputs_count[0] > 0);
+    return world.size() >= 1 && (world.rank() != 0 || taskData->inputs_count[0] > 0);
   };
 
   bool run() override {
