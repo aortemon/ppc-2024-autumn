@@ -82,7 +82,7 @@ void test_double(int sz, double min = -10e2, double max = 10e2) {
     return;
   }
 
-  EXPECT_TRUE(!task.validation());
+  EXPECT_TRUE(task.validation());
   task.pre_processing();
   task.run();
   task.post_processing();
